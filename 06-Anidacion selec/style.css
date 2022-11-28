@@ -1,0 +1,19 @@
+#boton {
+    padding: 10px;
+    margin: 20px;
+    color: aqua;
+    background-color: black;
+    border: solid;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+#boton:hover {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+#boton::selection{
+    content: "HECHO!";
+}
