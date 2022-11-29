@@ -1,0 +1,54 @@
+.padre{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 40%;
+    height: 40%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hijo img {
+    display: flex;
+    width: 80%;
+    background-image: none;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.padre:hover .hijo{
+    animation: traslacion 5s ease-in-out infinite forwards alternate;
+}
+
+@keyframes traslacion {
+    0%{
+        background-color: beige;
+        transform: translateX(0%);
+    }
+    20%{
+        background-color: burlywood;
+        transform: translateX(30%) translateY(150%);
+    }
+    40%{
+        background-color: darkmagenta;
+        transform: translateX(60%);
+    }
+
+    60%{
+        background-color: gold;
+        transform: translateX(90%) translateY(150%);
+    }
+    80%{
+        background-color:springgreen;
+        transform: translateX(120%);
+    }
+
+    100%{
+        background-color: crimson;
+        transform: translateX(150%) translateY(150%);
+    }
+}
